@@ -42,5 +42,15 @@ class XacNhanActivity : AppCompatActivity() {
         binding.btnSua.setOnClickListener {
             finish()
         }
+        binding.btnXacNhan.setOnClickListener {
+            if (don != null) {
+                val maDon = DatPhongHelper.taoMaDon(don)
+                val data = Intent().apply {
+                    putExtra("ma_don", maDon)
+                }
+                setResult(RESULT_OK, data)
+                finish()
+            }
+        }
     }
 }
