@@ -1,4 +1,4 @@
-package com.ute.datphong_2415053122226
+package com.ute.datphong
 
 import org.junit.Test
 

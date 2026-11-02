@@ -1,4 +1,4 @@
-package com.ute.datphong_2415053122226
+package com.ute.datphong
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

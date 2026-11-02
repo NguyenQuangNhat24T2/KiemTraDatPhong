@@ -1,4 +1,4 @@
-package com.ute.datphong_2415053122226
+package vn.edu.ute.datphong
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
