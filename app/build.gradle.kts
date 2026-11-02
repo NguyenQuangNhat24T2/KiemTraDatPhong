@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.ute.datphong_2415053122226"
+    namespace = "vn.edu.ute.datphong"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.ute.datphong_2415053122226"
+        applicationId = "vn.edu.ute.datphong"
         minSdk = 29
         targetSdk = 37
         versionCode = 1
