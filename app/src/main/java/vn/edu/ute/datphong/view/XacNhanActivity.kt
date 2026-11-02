@@ -1,21 +1,46 @@
 package vn.edu.ute.datphong.view
 
+import android.os.Build
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import vn.edu.ute.datphong.R
+import vn.edu.ute.datphong.databinding.ActivityXacNhanBinding
+import vn.edu.ute.datphong.helper.DatPhongHelper
+import vn.edu.ute.datphong.helper.dinhDangTien
+import vn.edu.ute.datphong.model.DonDatPhong
 
 class XacNhanActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityXacNhanBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_xac_nhan)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityXacNhanBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        val don = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getSerializableExtra("don_dat_phong", DonDatPhong::class.java)
+        } else {
+            @Suppress("DEPRECATION")
+            intent.getSerializableExtra("don_dat_phong") as? DonDatPhong
+        }
+        val tongTien = intent.getLongExtra("tong_tien", 0L)
+
+        if (don != null) {
+            binding.txtHoTen.text = "Họ tên: ${don.hoTen}"
+            binding.txtSdt.text = "Số điện thoại: ${don.sdt}"
+            binding.txtEmail.text = "Email: ${don.email}"
+
+            val tenLoai = DatPhongHelper.timLoaiPhong(don.maLoaiPhong)?.ten ?: don.maLoaiPhong
+            binding.txtLoaiPhong.text = "Loại phòng: $tenLoai"
+
+            binding.txtNgayNhan.text = "Ngày nhận: ${don.ngayNhan}"
+            binding.txtSoDem.text = "Số đêm: ${don.soDem}"
+            binding.txtSoKhach.text = "Số khách: ${don.soKhach}"
+            binding.txtTongTien.text = "Tổng tiền: ${tongTien.dinhDangTien()}"
+        }
+
+        binding.btnSua.setOnClickListener {
+            finish()
         }
     }
 }
