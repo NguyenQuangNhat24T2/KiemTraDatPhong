@@ -1,8 +1,10 @@
 package vn.edu.ute.datphong.view
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.doAfterTextChanged
 import com.google.android.material.snackbar.Snackbar
@@ -19,14 +21,51 @@ class DatPhongActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDatPhongBinding
     private var loaiPhongHienTai: LoaiPhong = DuLieuMau.dsLoaiPhong[0]
 
+    private val chonPhongLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val maLoai = result.data?.getStringExtra("ma_loai_phong")
+            if (maLoai != null) {
+                DatPhongHelper.timLoaiPhong(maLoai)?.let {
+                    loaiPhongHienTai = it
+                    capNhatHienThiLoaiPhong()
+                }
+            }
+        }
+    }
+
+    private val xacNhanLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        if (result.resultCode == Activity.RESULT_OK) {
+            val maDon = result.data?.getStringExtra("ma_don") ?: ""
+            Snackbar.make(binding.root, "Đặt phòng thành công - Mã đơn: $maDon", Snackbar.LENGTH_LONG).show()
+            xoaTrangCacO()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDatPhongBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        if (savedInstanceState != null) {
+            val maSaved = savedInstanceState.getString("SAVED_MA_PHONG")
+            if (maSaved != null) {
+                DatPhongHelper.timLoaiPhong(maSaved)?.let { loaiPhongHienTai = it }
+            }
+        }
+
         capNhatHienThiLoaiPhong()
         thietLapSuKienTamTinh()
+        thietLapSuKienChonPhong()
         thietLapSuKienDatPhong()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putString("SAVED_MA_PHONG", loaiPhongHienTai.ma)
     }
 
     private fun capNhatHienThiLoaiPhong() {
@@ -35,12 +74,8 @@ class DatPhongActivity : AppCompatActivity() {
     }
 
     private fun thietLapSuKienTamTinh() {
-        binding.edtSoDem.doAfterTextChanged {
-            capNhatTamTinh()
-        }
-        binding.edtSoKhach.doAfterTextChanged {
-            capNhatTamTinh()
-        }
+        binding.edtSoDem.doAfterTextChanged { capNhatTamTinh() }
+        binding.edtSoKhach.doAfterTextChanged { capNhatTamTinh() }
     }
 
     private fun capNhatTamTinh() {
@@ -59,9 +94,18 @@ class DatPhongActivity : AppCompatActivity() {
         }
     }
 
+    private fun thietLapSuKienChonPhong() {
+        binding.btnChonPhong.setOnClickListener {
+            val soKhach = binding.edtSoKhach.text.toString().trim().toIntOrNull() ?: 1
+            val intent = Intent(this, ChonPhongActivity::class.java).apply {
+                putExtra("so_khach", soKhach)
+            }
+            chonPhongLauncher.launch(intent)
+        }
+    }
+
     private fun thietLapSuKienDatPhong() {
         binding.btnDatPhong.setOnClickListener {
-            // Xóa lỗi cũ
             binding.tilHoTen.error = null
             binding.tilSdt.error = null
             binding.tilEmail.error = null
@@ -130,8 +174,19 @@ class DatPhongActivity : AppCompatActivity() {
                     putExtra("don_dat_phong", don)
                     putExtra("tong_tien", tongTien)
                 }
-                startActivity(intent)
+                xacNhanLauncher.launch(intent)
             }
         }
+    }
+
+    private fun xoaTrangCacO() {
+        binding.edtHoTen.text?.clear()
+        binding.edtSdt.text?.clear()
+        binding.edtEmail.text?.clear()
+        binding.edtNgayNhan.text?.clear()
+        binding.edtSoDem.text?.clear()
+        binding.edtSoKhach.text?.clear()
+        loaiPhongHienTai = DuLieuMau.dsLoaiPhong[0]
+        capNhatHienThiLoaiPhong()
     }
 }
