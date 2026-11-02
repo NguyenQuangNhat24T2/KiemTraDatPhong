@@ -1,0 +1,180 @@
+﻿================================================================================
+                   FDT AGENT - LOCAL GIT COMMIT LOG HISTORY                     
+================================================================================
+ExportedAt: 2026-11-02 07:15:31 UTC
+
+--- CONTRIBUTORS SUMMARY ---
+11	Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+
+--- MACHINE READABLE COMMITS ---
+COMMIT_ROW|e19cb85420d8be8ba34bc6da756aa20ce4c38c6e|e19cb85|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T14:15:12+07:00|viet DatPhongHelper
+COMMIT_ROW|224653fe862b21f5cc30cb7db6347256711b7b60|224653f|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T14:07:48+07:00|FDT Agent Auto-Commit [14:07:48]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|7ffb3126f37811f84466116c968777cc4b79dc83|7ffb312|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T14:04:45+07:00|tao du lieu mau
+COMMIT_ROW|c76e4ddb0f3e44f2d4165db674bf1344b9ca7850|c76e4dd|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T14:02:46+07:00|FDT Agent Auto-Commit [14:02:46]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|66298e018336f055c2bf6d41c5e74c0b744291d0|66298e0|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:59:33+07:00|tao cac class model
+COMMIT_ROW|7e037d8716fa5d485a5fc00d1296c302f78e23d0|7e037d8|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:57:44+07:00|FDT Agent Auto-Commit [13:57:44]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|b385cdb4252ab916ba546eb6422245540eee660a|b385cdb|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:52:44+07:00|FDT Agent Auto-Commit [13:52:44]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|3559922a6899e0ccc1078c4dd48abb1a9ef4d8f7|3559922|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:44:39+07:00|Khoi tao du an
+COMMIT_ROW|1f5cebf516f6b1ad3cc5e02ec0fba98213c23425|1f5cebf|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:42:42+07:00|FDT Agent Auto-Commit [13:42:42]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|21cbf71a9b12764dac3a5595d7616ca19f958cdc|21cbf71|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:37:41+07:00|FDT Agent Auto-Commit [13:37:41]: Tự động sao lưu tiến độ làm bài định kỳ
+COMMIT_ROW|eaf341f470dc775239cd52155aca2f82fa1948c9|eaf341f|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|Nguyễn Quang Nhật (2415053122226)|2415053122226@fdt.ute.udn.vn|2026-11-02T13:24:07+07:00|FDT Agent: Initialized local project repository
+
+--- DETAILED COMMIT HISTORY WITH FILE STATS ---
+commit e19cb85420d8be8ba34bc6da756aa20ce4c38c6e
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 14:15:12 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 14:15:12 2026 +0700
+
+    viet DatPhongHelper
+
+ .../java/vn/edu/ute/datphong/helper/DatPhongHelper.kt  | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+
+commit 224653fe862b21f5cc30cb7db6347256711b7b60
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 14:07:48 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 14:07:48 2026 +0700
+
+    FDT Agent Auto-Commit [14:07:48]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ app/src/main/java/vn/edu/ute/datphong/helper/DatPhongHelper.kt | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 7ffb3126f37811f84466116c968777cc4b79dc83
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 14:04:45 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 14:04:45 2026 +0700
+
+    tao du lieu mau
+
+ app/src/main/java/vn/edu/ute/datphong/data/DuLieuMau.kt | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+commit c76e4ddb0f3e44f2d4165db674bf1344b9ca7850
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 14:02:46 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 14:02:46 2026 +0700
+
+    FDT Agent Auto-Commit [14:02:46]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ app/src/main/java/vn/edu/ute/datphong/data/DuLieuMau.kt | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 66298e018336f055c2bf6d41c5e74c0b744291d0
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:59:33 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:59:33 2026 +0700
+
+    tao cac class model
+
+ .../main/java/vn/edu/ute/datphong/model/DonDatPhong.kt    | 15 ++++++++++++++-
+ 1 file changed, 14 insertions(+), 1 deletion(-)
+
+commit 7e037d8716fa5d485a5fc00d1296c302f78e23d0
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:57:44 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:57:44 2026 +0700
+
+    FDT Agent Auto-Commit [13:57:44]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ app/src/main/java/vn/edu/ute/datphong/model/DonDatPhong.kt | 4 ++++
+ app/src/main/java/vn/edu/ute/datphong/model/LoaiPhong.kt   | 8 ++++++++
+ 2 files changed, 12 insertions(+)
+
+commit b385cdb4252ab916ba546eb6422245540eee660a
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:52:44 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:52:44 2026 +0700
+
+    FDT Agent Auto-Commit [13:52:44]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ .../ute/{datphong_2415053122226 => datphong}/ExampleInstrumentedTest.kt | 2 +-
+ .../ute/datphong_2415053122226 => vn/edu/ute/datphong}/MainActivity.kt  | 2 +-
+ .../com/ute/{datphong_2415053122226 => datphong}/ExampleUnitTest.kt     | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 3559922a6899e0ccc1078c4dd48abb1a9ef4d8f7
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:44:39 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:44:39 2026 +0700
+
+    Khoi tao du an
+
+commit 1f5cebf516f6b1ad3cc5e02ec0fba98213c23425
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:42:42 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:42:42 2026 +0700
+
+    FDT Agent Auto-Commit [13:42:42]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ app/build.gradle.kts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 21cbf71a9b12764dac3a5595d7616ca19f958cdc
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:37:41 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:37:41 2026 +0700
+
+    FDT Agent Auto-Commit [13:37:41]: Tự động sao lưu tiến độ làm bài định kỳ
+
+ app/.gitignore                                     |   1 +
+ app/build.gradle.kts                               |  43 ++++
+ .../ExampleInstrumentedTest.kt                     |  24 ++
+ app/src/main/AndroidManifest.xml                   |  26 +++
+ .../com/ute/datphong_2415053122226/MainActivity.kt |  20 ++
+ app/src/main/keepRules/rules.keep                  |  12 +
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++
+ .../main/res/drawable/ic_launcher_foreground.xml   |  30 +++
+ app/src/main/res/layout/activity_main.xml          |  19 ++
+ app/src/main/res/mipmap-anydpi/ic_launcher.xml     |   6 +
+ .../main/res/mipmap-anydpi/ic_launcher_round.xml   |   6 +
+ app/src/main/res/mipmap-hdpi/ic_launcher.webp      | Bin 0 -> 1404 bytes
+ .../main/res/mipmap-hdpi/ic_launcher_round.webp    | Bin 0 -> 2898 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher.webp      | Bin 0 -> 982 bytes
+ .../main/res/mipmap-mdpi/ic_launcher_round.webp    | Bin 0 -> 1772 bytes
+ app/src/main/res/mipmap-xhdpi/ic_launcher.webp     | Bin 0 -> 1900 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.webp   | Bin 0 -> 3918 bytes
+ app/src/main/res/mipmap-xxhdpi/ic_launcher.webp    | Bin 0 -> 2884 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.webp  | Bin 0 -> 5914 bytes
+ app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp   | Bin 0 -> 3844 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.webp | Bin 0 -> 7778 bytes
+ app/src/main/res/values-night/themes.xml           |   7 +
+ app/src/main/res/values/colors.xml                 |   5 +
+ app/src/main/res/values/strings.xml                |   3 +
+ app/src/main/res/values/themes.xml                 |   9 +
+ app/src/main/res/xml/backup_rules.xml              |  13 ++
+ app/src/main/res/xml/data_extraction_rules.xml     |  19 ++
+ .../ute/datphong_2415053122226/ExampleUnitTest.kt  |  17 ++
+ build.gradle.kts                                   |   4 +
+ gradle.properties                                  |  19 ++
+ gradle/gradle-daemon-jvm.properties                |  12 +
+ gradle/libs.versions.toml                          |  24 ++
+ gradle/wrapper/gradle-wrapper.jar                  | Bin 0 -> 45457 bytes
+ gradle/wrapper/gradle-wrapper.properties           |   9 +
+ gradlew                                            | 251 +++++++++++++++++++++
+ gradlew.bat                                        |  94 ++++++++
+ local.properties                                   |  10 +
+ settings.gradle.kts                                |  26 +++
+ 38 files changed, 879 insertions(+)
+
+commit eaf341f470dc775239cd52155aca2f82fa1948c9
+Author:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+AuthorDate: Mon Nov 2 13:24:07 2026 +0700
+Commit:     Nguyễn Quang Nhật (2415053122226) <2415053122226@fdt.ute.udn.vn>
+CommitDate: Mon Nov 2 13:24:07 2026 +0700
+
+    FDT Agent: Initialized local project repository
+
+ .gitignore | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
